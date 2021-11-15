@@ -93,58 +93,58 @@
 
 		partition@80000 {
 			label = "u_env";
-			reg = <0x80000 0x40000>;
+			reg = <0x80000 0xc0000>;
 			read-only;
 		};
 
 		factory: partition@c0000 {
 			label = "factory";
-			reg = <0xc0000 0x40000>;
+			reg = <0xc0000 0x100000>;
 			read-only;
 		};
 
 		partition@100000 {
 			label = "s_env";
-			reg = <0x100000 0x40000>;
+			reg = <0x100000 0x140000>;
 		};
 
 		partition@140000 {
 			label = "devinfo";
-			reg = <0x140000 0x40000>;
+			reg = <0x140000 0x180000>;
 			read-only;
 		};
 
 		partition@180000 {
 			label = "kernel";
-			reg = <0x180000 0x400000>;
+			reg = <0x180000 0x580000>;
 		};
 
 		partition@580000 {
 			label = "ubi";
-			reg = <0x580000 0x2400000>;
+			reg = <0x580000 0x2980000>;
 		};
 
 		partition@2980000 {
 			label = "alt_kernel";
-			reg = <0x2980000 0x400000>;
+			reg = <0x2980000 0x2d80000>;
 			read-only;
 		};
 
 		partition@2d80000 {
 			label = "alt_rootfs";
-			reg = <0x2d80000 0x2400000>;
+			reg = <0x2d80000 0x5180000>;
 			read-only;
 		};
 
 		partition@5180000 {
 			label = "sysdiag";
-			reg = <0x5180000 0x100000>;
+			reg = <0x5180000 0x5280000>;
 			read-only;
 		};
 
 		partition@5280000 {
 			label = "syscfg";
-			reg = <0x5280000 0x2d00000>;
+			reg = <0x5280000 0x7f80000>;
 			read-only;
 		};
 	};
