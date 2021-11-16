@@ -165,6 +165,10 @@
 	gpio {
 		groups = "i2c", "uart2", "uart3", "jtag", "wdt";
 		function = "gpio";
+		rtc0: rtc@51 {
+			compatible = "nxp,pcf8563";
+			reg = <0x51>;
+		};
 	};
 };
 
