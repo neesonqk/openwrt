@@ -79,7 +79,8 @@
 
 &nand {
 	status = "okay";
-
+	chip-delay= <40>
+	
 	partitions {
 		compatible = "fixed-partitions";
 		#address-cells = <1>;
